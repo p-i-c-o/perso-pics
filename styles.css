@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'Lausanne';
-  src: url('ls.otf') format('opentype'); /* Adjust path */
+  src: url('ls.otf') format('opentype');
 }
 
 * {
   font-family: "Lausanne";
+  color: white;
 }
 
 .flex-container {
@@ -24,7 +25,8 @@
   flex-basis: auto;
   align-self: auto;
   order: 0;
-  border: 2px solid black;
+  border: 2px solid #3c3c3c;
+  background-color: #3c3c3c;
 }
 
 .flex-items img {
@@ -33,7 +35,6 @@
 
 .flex-items a {
   text-decoration: none;
-  color: black;
 }
 
 .flex-items a:hover {
@@ -46,20 +47,20 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  position: fixed; /* Fixes banner at the top */
+  position: fixed; 
   top: 0;
   left: 0;
-  height: 60px; /* Set a fixed height */
+  height: 60px; 
   background-color: #333;
-  color: #fff;
-  z-index: 10; /* Keeps it above other content */
+  color: white;
+  z-index: 10; 
 }
 
 .top-banner-items {
-  padding: 0 25px; /* Equal left and right padding */
+  padding: 0 25px; 
 }
 
-/* Add margin to prevent content from being hidden */
+
 body {
-  margin-top: 60px; /* Same height as .top-banner */
+  margin-top: 60px; 
 }
