@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Lausanne';
+  src: url('ls.otf') format('opentype'); /* Adjust path */
+}
+
+* {
+  font-family: "Lausanne";
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: normal;
+  align-content: normal;
+  gap: 15px;
+}
+  
+.flex-items {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  border: 2px solid black;
+}
+
+.flex-items img {
+  max-height: 200px;
+}
+
+.flex-items a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex-items a:hover {
+  text-decoration: underline;
+}
+
+.top-banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed; /* Fixes banner at the top */
+  top: 0;
+  left: 0;
+  height: 60px; /* Set a fixed height */
+  background-color: #333;
+  color: #fff;
+  z-index: 10; /* Keeps it above other content */
+}
+
+.top-banner-items {
+  padding: 0 25px; /* Equal left and right padding */
+}
+
+/* Add margin to prevent content from being hidden */
+body {
+  margin-top: 60px; /* Same height as .top-banner */
+}
